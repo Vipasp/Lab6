@@ -13,10 +13,7 @@ public class Student {
 
     public Student() {
     }
-    public int getScholarship(double averageMark){
-        int scholarship=80;
-        if (averageMark==5) scholarship=100;
-
-        return  scholarship;
+    public int getScholarship(){
+        return averageMark == 5 ? 100:80;
     }
 }
